@@ -47,9 +47,7 @@ body {
   background-position: center;
   height: 100vh; }
   .banner .banner-content {
-    display: flex;
     position: absolute;
-    flex-direction: column;
     top: 25%;
     left: 10%;
     color: white; }
@@ -65,7 +63,6 @@ body {
       display: inline;
       align-items: center;
       position: relative;
-      width: fit-content;
       border: white 2px solid;
       padding: 0.75rem 2rem;
       text-decoration: none;

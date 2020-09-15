@@ -1,15 +1,14 @@
 $primary-color: #2fbea6;
 $secondary-color: #5b86e6;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
-.logo {
-  height: 60px;
-  font-size: 4rem;
+body {
+  font-family: "Lato", sans-serif;
 }
-
 .navbar {
   display: flex;
   position: fixed;
@@ -18,24 +17,94 @@ $secondary-color: #5b86e6;
   justify-content: space-between;
   padding: 1rem 3rem;
   align-items: center;
-  background-color: purple;
 
-  span {
-    color: red;
-    cursor: pointer;
-    text-align: center;
+  .navbar-logo {
+    display: flex;
     align-items: center;
-    vertical-align: middle;
+    .navbar-logo-icon {
+      font-size: 3rem;
+      padding-right: 0.5rem;
+      color: white;
+    }
+    h1 {
+      padding-left: 0.5rem;
+      color: white;
+    }
   }
 
-  ul li {
-    display: inline;
-    padding: 1.5rem;
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    li {
+      display: inline;
+      padding: 0 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      padding: 0.5rem 0;
+
+      .shopping-cart {
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+    }
   }
-  ul li a {
-    text-decoration: none;
-    color: red;
-    padding: 0.5rem 0;
-    cursor: pointer;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./../img/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  .banner-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 25%;
+    left: 10%;
+
+    color: white;
+    .banner-heading {
+      font-size: 4rem;
+      font-weight: 400;
+      margin-bottom: 1.75rem;
+    }
+    .banner-text {
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin-bottom: 1.5rem;
+    }
+    .banner-button {
+      display: inline;
+      align-items: center;
+      position: relative;
+      width: fit-content;
+      border: white 2px solid;
+      padding: 0.75rem 2rem;
+      text-decoration: none;
+      color: floralwhite;
+      border-radius: 50px;
+
+      .banner-button-text {
+        font-size: 1.2rem;
+        padding-right: 1.75rem;
+        margin-bottom: 1.5rem;
+      }
+      .hr-bar {
+        border-left: white solid 3px;
+        padding-right: 1rem;
+        height: 100%;
+        position: absolute;
+        left: 67%;
+        top: 0;
+      }
+    }
+    .banner-button:hover {
+      background-color: rgb(172, 161, 161);
+    }
   }
 }

@@ -8,11 +8,24 @@
   font-size: 4rem; }
 
 .navbar {
-  display: flex; }
-  .navbar ui li {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  background-color: purple; }
+  .navbar span {
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle; }
+  .navbar ul li {
     display: inline;
-    padding: 2rem; }
-  .navbar a {
+    padding: 1.5rem; }
+  .navbar ul li a {
     text-decoration: none;
     color: red;
     padding: 0.5rem 0;

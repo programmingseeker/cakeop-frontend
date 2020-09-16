@@ -5,7 +5,7 @@
   padding: 0; }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 .navbar {
   display: flex;
@@ -13,7 +13,7 @@ body {
   width: 100%;
   z-index: 1;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   align-items: center; }
   .navbar .navbar-logo {
     display: flex;
@@ -24,6 +24,7 @@ body {
       color: white; }
     .navbar .navbar-logo h1 {
       padding-left: 0.5rem;
+      font-weight: 700;
       color: white; }
   .navbar .navbar-links {
     display: flex;
@@ -48,7 +49,7 @@ body {
   height: 100vh; }
   .banner .banner-content {
     position: absolute;
-    top: 25%;
+    top: 33%;
     left: 10%;
     color: white; }
     .banner .banner-content .banner-heading {
@@ -60,24 +61,51 @@ body {
       font-weight: 200;
       margin-bottom: 1.5rem; }
     .banner .banner-content .banner-button {
-      display: inline;
+      display: inline-flex;
       align-items: center;
+      justify-content: space-between;
       position: relative;
       border: white 2px solid;
-      padding: 0.75rem 2rem;
+      padding: 0.75rem 1.75rem;
       text-decoration: none;
       color: floralwhite;
       border-radius: 50px; }
       .banner .banner-content .banner-button .banner-button-text {
         font-size: 1.2rem;
-        padding-right: 1.75rem;
-        margin-bottom: 1.5rem; }
+        padding-right: 1.5rem; }
       .banner .banner-content .banner-button .hr-bar {
-        border-left: white solid 3px;
-        padding-right: 1rem;
+        border: white solid 1px;
         height: 100%;
         position: absolute;
-        left: 67%;
+        left: 65%;
         top: 0; }
+      .banner .banner-content .banner-button .banner-button-icon {
+        color: white; }
     .banner .banner-content .banner-button:hover {
       background-color: #aca1a1; }
+
+.works {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .works .works-header {
+    font-size: 2.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem; }
+  .works .works-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem; }
+    .works .works-content .works-content-item {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .works .works-content .works-content-item .works-content-item-icon {
+        height: 20%; }
+      .works .works-content .works-content-item .works-content-item-title {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+      .works .works-content .works-content-item .works-content-item-text {
+        font-size: 1.15rem; }

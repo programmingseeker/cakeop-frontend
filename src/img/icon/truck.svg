@@ -9,7 +9,9 @@
 	height="64"
 	viewBox="0 0 512 512" 
 	style="enable-background:new 0 0 512 512;" 
-	xml:space="preserve">
+	xml:space="preserve"
+	fill="#6b4a40"
+	>
 	<g>
 		<g>
 			<path d="M386.689,304.403c-35.587,0-64.538,28.951-64.538,64.538s28.951,64.538,64.538,64.538

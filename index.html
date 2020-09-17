@@ -18,10 +18,21 @@
 				<li><a href="#">Contact</a></li>
 				<li>
 					<a href="#">
-						<img
+						<svg
 							class="shopping-cart"
-							src="./src/img/icon/shopping-cart.svg"
-						/>
+							width="30"
+							height="30"
+							viewBox="0 0 30 30"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M24.4409 14.955C23.9311 15.885 22.9415 16.5 21.8169 16.5H10.646L8.99666 19.5H26.99V22.5H8.99666C6.71751 22.5 5.27804 20.055 6.37263 18.045L8.39688 14.385L2.99889 3H0V0H4.90318L6.31266 3H28.5044C29.644 3 30.3637 4.23 29.8089 5.22L24.4409 14.955ZM25.9554 6H7.73712L11.2908 13.5H21.8169L25.9554 6ZM8.99666 24C7.34727 24 6.01276 25.35 6.01276 27C6.01276 28.65 7.34727 30 8.99666 30C10.646 30 11.9955 28.65 11.9955 27C11.9955 25.35 10.646 24 8.99666 24ZM21.0072 27C21.0072 25.35 22.3417 24 23.9911 24C25.6405 24 26.99 25.35 26.99 27C26.99 28.65 25.6405 30 23.9911 30C22.3417 30 21.0072 28.65 21.0072 27Z"
+								fill="currentColor"
+							/>
+						</svg>
 					</a>
 				</li>
 				<li><a href="#">Log In / Sign Up</a></li>
@@ -44,7 +55,6 @@
 						width="23"
 						height="23"
 						viewBox="0 0 23 23"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<path
@@ -62,11 +72,13 @@
 
 			<div class="works-content">
 				<div class="works-content-item">
-					<img
-						src="./src/img/icon/spanner.svg"
-						alt="spanner"
-						class="works-content-item-icon"
-					/>
+					<div class="works-content-icon-container">
+						<img
+							src="./src/img/icon/spanner.svg"
+							alt="spanner"
+							class="works-content-item-icon"
+						/>
+					</div>
 					<span class="works-content-item-title">Customized</span>
 					<p class="works-content-item-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -75,11 +87,13 @@
 				</div>
 
 				<div class="works-content-item">
-					<img
-						class="works-content-item-icon"
-						src="./src/img/icon/cake.svg"
-						alt="cake"
-					/>
+					<div class="works-content-icon-container">
+						<img
+							class="works-content-item-icon"
+							src="./src/img/icon/cake.svg"
+							alt="cake"
+						/>
+					</div>
 					<span class="works-content-item-title">Wedding Cakes</span>
 					<p class="works-content-item-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -87,11 +101,13 @@
 					</p>
 				</div>
 				<div class="works-content-item">
-					<img
-						src="./src/img/icon/truck.svg"
-						alt="spanner"
-						class="works-content-item-icon"
-					/>
+					<div class="works-content-icon-container">
+						<img
+							src="./src/img/icon/truck.svg"
+							alt="spanner"
+							class="works-content-item-icon"
+						/>
+					</div>
 					<span class="works-content-item-title"
 						>Door Step Delivery</span
 					>
@@ -105,6 +121,7 @@
 		<section class="products">
 			<h2 class="products-header">Our Products</h2>
 			<div class="products-content">
+				<!---------------------------------------------------------------------------------------------------- -->
 				<div class="products-content-item">
 					<img
 						class="products-content-item-like"
@@ -113,7 +130,7 @@
 					/>
 					<img
 						class="products-content-item-image"
-						src="./src/img/product-img-2.png"
+						src="./src/img/product-img-1.png"
 						alt="Product"
 					/>
 					<h2 class="products-content-item-name">
@@ -124,7 +141,6 @@
 					</h4>
 					<span class="products-content-item-price">₹120</span>
 				</div>
-
 				<div class="products-content-item">
 					<img
 						class="products-content-item-like"
@@ -164,6 +180,52 @@
 					</h4>
 					<span class="products-content-item-price">₹120</span>
 				</div>
+			</div>
+			<div class="products-paginate">
+				<a href="#">&laquo;</a>
+				<a href="#">1</a>
+				<a href="#" class="active">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">&raquo;</a>
+			</div>
+		</section>
+		<section class="about">
+			<h2 class="about-header">About Us</h2>
+			<h2 class="about-secondary-header">
+				We bake <br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it right
+			</h2>
+			<div class="about-content">
+				<div class="about-main-content">
+					<img src="./src/img/group.png" alt="Team" />
+					<div>
+						<h1 class="primary-color">Our Team</h1>
+						<span class="members">Mark Smith:CEO</span>
+						<span class="members">Shannon Johnson</span>
+						<span class="members">John Corbit</span>
+					</div>
+				</div>
+				<p class="about-content-text">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Explicabo voluptatibus earum cupiditate quos eveniet
+					aspernatur saepe. Nisi accusamus pariatur quasi eos dolorem,
+					similique esse dignissimos error veniam. Consectetur
+					cupiditate quos, iusto veritatis distinctio porro ullam
+					velit voluptates quia dolores quidem laboriosam hic autem
+					error eum optio, voluptatibus sapiente architecto id.
+				</p>
+				<p class="about-content-text">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Explicabo voluptatibus earum cupiditate quos eveniet
+					aspernatur saepe. Nisi accusamus pariatur quasi eos dolorem,
+					similique esse dignissimos error veniam. Consectetur
+					cupiditate quos, iusto veritatis distinctio porro ullam
+					velit voluptates quia dolores quidem laboriosam hic autem
+					error eum optio, voluptatibus sapiente architecto id.
+				</p>
 			</div>
 		</section>
 	</body>

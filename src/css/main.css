@@ -13,10 +13,11 @@ body {
   display: flex;
   position: fixed;
   width: 100%;
+  background-color: #6b4a40;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  margin: 2rem 0; }
+  padding: 0.5rem 0; }
   .navbar .navbar-logo {
     display: flex;
     align-items: center;
@@ -36,7 +37,7 @@ body {
         font-size: 1rem;
         text-decoration: none;
         color: white;
-        padding: 1.5rem 1rem; }
+        padding: 0.65rem 1rem; }
         .navbar .navbar-links li a:hover {
           color: #fff6b8;
           border-bottom: #fff6b8 2px solid;

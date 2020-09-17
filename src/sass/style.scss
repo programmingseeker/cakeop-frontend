@@ -1,0 +1,81 @@
+$primary-color: #fff6b8;
+$primary-dark: #6b4a40;
+$section-bg-light: #fffceb;
+$form-label: #777;
+$form-placeholder: #888;
+$menu-bar-content: #b99a8b;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 0.5rem 0;
+  background-color: $primary-dark;
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    .navbar-logo-icon {
+      margin-right: 1rem;
+    }
+    .navbar-logo-text {
+      color: #fff;
+    }
+  }
+  .navbar-links {
+    display: flex;
+    margin-right: 2rem;
+    li {
+      display: inline;
+      padding: 1rem;
+      a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        &:hover {
+          border-bottom: $primary-color 2px solid;
+        }
+      }
+      .shopping-cart {
+        height: 1.25rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.menu-bar {
+  height: 100%;
+  width: 360px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $section-bg-light;
+  overflow-x: hidden;
+  margin-top: 4.45rem;
+  //   padding: 20px;
+  .menu-bar-content-item {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 8px 6px 16px;
+    .menu-bar-content-item-text {
+      text-decoration: none;
+      font-size: 25px;
+      color: $menu-bar-content;
+      display: block;
+    }
+  }
+}

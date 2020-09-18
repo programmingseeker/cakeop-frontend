@@ -86,8 +86,6 @@ body {
     }
     &:hover {
       background-color: $primary-color;
-      margin: 0.2rem 0.2rem;
-      padding: 7px 10px 7px 16px;
       border-radius: 1rem;
       .menu-bar-content-item-text {
         color: $primary-dark;

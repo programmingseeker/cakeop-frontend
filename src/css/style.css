@@ -67,8 +67,6 @@ body {
       padding-left: 2rem; }
     .menu-bar .menu-bar-content-item:hover {
       background-color: #fff6b8;
-      margin: 0.2rem 0.2rem;
-      padding: 7px 10px 7px 16px;
       border-radius: 1rem; }
       .menu-bar .menu-bar-content-item:hover .menu-bar-content-item-text {
         color: #6b4a40; }

@@ -65,41 +65,103 @@ body {
       display: block;
       padding-top: 0.35rem;
       padding-left: 2rem; }
+    .menu-bar .menu-bar-content-item:hover {
+      background-color: #fff6b8;
+      margin: 0.2rem 0.2rem;
+      padding: 7px 10px 7px 16px;
+      border-radius: 1rem; }
+      .menu-bar .menu-bar-content-item:hover .menu-bar-content-item-text {
+        color: #6b4a40; }
+      .menu-bar .menu-bar-content-item:hover .menu-bar-content-item-icon {
+        fill: #6b4a40; }
 
-.page-content-item {
-  font-family: Lato;
-  display: flex;
-  flex-direction: column;
+.page-content {
   position: absolute;
   top: 4.45rem;
-  left: 40%;
-  color: #000; }
-  .page-content-item .page-content-main-text {
+  left: 40%; }
+  .page-content .page-content-item {
+    font-family: Lato;
     display: flex;
-    height: 50px;
-    font-weight: 800;
-    font-size: 48px;
-    text-align: center;
-    color: #6b4a40;
-    padding: 0rem 9rem;
-    margin: 1rem 0rem; }
-  .page-content-item .form-label {
-    font-size: 147%;
-    display: flex;
-    align-items: center;
-    color: #777;
-    padding: 1rem; }
-  .page-content-item input {
-    padding: 0.5rem;
-    width: 100%;
-    font-weight: 300;
-    color: #888;
-    font-size: 1rem; }
-  .page-content-item .drop-shadow {
-    display: flex;
-    height: 3rem;
-    padding: 0.4rem 2rem;
-    background: #ffffff;
-    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 21px;
-    border: 0px; }
+    flex-direction: column;
+    color: #000; }
+    .page-content .page-content-item .page-content-main-text {
+      display: flex;
+      height: 50px;
+      font-weight: 800;
+      font-size: 48px;
+      text-align: center;
+      color: #6b4a40;
+      padding: 0rem 9rem;
+      margin: 1rem 0rem; }
+    .page-content .page-content-item .form-label {
+      font-size: 147%;
+      display: flex;
+      align-items: center;
+      color: #777;
+      padding: 1rem; }
+    .page-content .page-content-item input {
+      padding: 0.5rem;
+      width: 100%;
+      font-weight: 300;
+      color: #888;
+      font-size: 1rem; }
+    .page-content .page-content-item .drop-shadow {
+      display: flex;
+      height: 3rem;
+      padding: 0.4rem 2rem;
+      background: #ffffff;
+      box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 21px;
+      border: 0px; }
+    .page-content .page-content-item .profile {
+      display: flex;
+      flex-direction: row;
+      margin-top: 25px;
+      /* Modal Content (image) */
+      /* Caption of Modal Image */ }
+      .page-content .page-content-item .profile .profile-photo {
+        border-radius: 50%;
+        mix-blend-mode: multiply; }
+      .page-content .page-content-item .profile a {
+        text-decoration: none; }
+      .page-content .page-content-item .profile #myImg:hover {
+        opacity: 0.9; }
+      .page-content .page-content-item .profile .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.9); }
+      .page-content .page-content-item .profile .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px; }
+      .page-content .page-content-item .profile #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #fff6b8;
+        padding: 10px 0;
+        height: 150px;
+        font-size: 32px; }
+      .page-content .page-content-item .profile .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold; }
+      .page-content .page-content-item .profile .close:hover,
+      .page-content .page-content-item .profile .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer; }

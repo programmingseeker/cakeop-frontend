@@ -73,6 +73,9 @@ body {
     display: flex;
     flex-direction: row;
     padding: 7px 8px 7px 16px;
+    .menu-bar-content-item-icon {
+      // fill: $menu-bar-content;
+    }
     .menu-bar-content-item-text {
       text-decoration: none;
       font-size: 25px;
@@ -81,49 +84,127 @@ body {
       padding-top: 0.35rem;
       padding-left: 2rem;
     }
+    &:hover {
+      background-color: $primary-color;
+      margin: 0.2rem 0.2rem;
+      padding: 7px 10px 7px 16px;
+      border-radius: 1rem;
+      .menu-bar-content-item-text {
+        color: $primary-dark;
+      }
+      .menu-bar-content-item-icon {
+        fill: $primary-dark;
+      }
+    }
   }
 }
 ////////////////////////////////////////////////////////////////
-.page-content-item {
-  font-family: Lato;
-  display: flex;
-  flex-direction: column;
+.page-content {
   position: absolute;
   top: 4.45rem;
   left: 40%;
-  color: #000;
-  .page-content-main-text {
+  .page-content-item {
+    font-family: Lato;
     display: flex;
-    height: 50px;
+    flex-direction: column;
 
-    font-weight: 800;
-    font-size: 48px;
-    text-align: center;
-    color: $primary-dark;
-    padding: 0rem 9rem;
-    margin: 1rem 0rem;
-  }
-  .form-label {
-    font-size: 147%;
-    display: flex;
-    align-items: center;
-    color: $form-label;
-    padding: 1rem;
-  }
-  input {
-    padding: 0.5rem;
-    width: 100%;
-    font-weight: 300;
-    color: $form-placeholder;
-    font-size: 1rem;
-  }
-  .drop-shadow {
-    display: flex;
-    height: 3rem;
-    padding: 0.4rem 2rem;
-    background: #ffffff;
-    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 21px;
-    border: 0px;
+    color: #000;
+    .page-content-main-text {
+      display: flex;
+      height: 50px;
+
+      font-weight: 800;
+      font-size: 48px;
+      text-align: center;
+      color: $primary-dark;
+      padding: 0rem 9rem;
+      margin: 1rem 0rem;
+    }
+    .form-label {
+      font-size: 147%;
+      display: flex;
+      align-items: center;
+      color: $form-label;
+      padding: 1rem;
+    }
+    input {
+      padding: 0.5rem;
+      width: 100%;
+      font-weight: 300;
+      color: $form-placeholder;
+      font-size: 1rem;
+    }
+    .drop-shadow {
+      display: flex;
+      height: 3rem;
+      padding: 0.4rem 2rem;
+      background: #ffffff;
+      box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 21px;
+      border: 0px;
+    }
+    .profile {
+      display: flex;
+      flex-direction: row;
+      margin-top: 25px;
+      .profile-photo {
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+      }
+      a {
+        text-decoration: none;
+      }
+      #myImg:hover {
+        opacity: 0.9;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: $primary-color;
+        padding: 10px 0;
+        height: 150px;
+        font-size: 32px;
+      }
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
   }
 }

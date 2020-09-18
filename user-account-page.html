@@ -38,7 +38,7 @@
         <li><a href="#">Log In / Sign Up</a></li>
       </ul>
     </nav>
-    <!--  -->
+    <!---------------------------------------------------------->
     <section class="menu-bar">
       <div class="menu-bar-content">
         <div class="menu-bar-content-item">
@@ -54,7 +54,7 @@
         <div class="menu-bar-content-item">
           <img
             src="./src/img/icon/card-travel.svg"
-            alt="settings"
+            alt="card-travel"
             class="menu-bar-content-item-icon"
           />
           <a href="#myBooking" class="menu-bar-content-item-text"
@@ -66,7 +66,7 @@
         <div class="menu-bar-content-item">
           <img
             src="./src/img/icon/star.svg"
-            alt="settings"
+            alt="star"
             class="menu-bar-content-item-icon"
           />
           <a href="#myreviews" class="menu-bar-content-item-text">My Reviews</a>
@@ -76,14 +76,14 @@
         <div class="menu-bar-content-item">
           <img
             src="./src/img/icon/credit-card.svg"
-            alt="settings"
+            alt="credit card"
             class="menu-bar-content-item-icon"
           />
           <a href="#billing" class="menu-bar-content-item-text">Billing</a>
         </div>
       </div>
     </section>
-    <!--  -->
+    <!---------------------------------------------------------->
     <section class="page-content">
       <div class="page-content-item">
         <h1 class="page-content-main-text">Account Settings</h1>
@@ -101,7 +101,24 @@
           name="name"
           placeholder="username@xyzmail.com"
         />
+
+        <div class="profile">
+          <img
+            id="myImg"
+            src="./src/img/user-picture.png"
+            alt="User Profile"
+            class="profile-photo"
+          />
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <!-- &times gives us the multiply symbol -->
+            <img class="modal-content" id="imgUser" />
+            <div id="caption"></div>
+          </div>
+          <a href="#new-profile-picture" class="form-label">Choose New photo</a>
+        </div>
       </div>
     </section>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>

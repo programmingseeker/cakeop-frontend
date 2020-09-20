@@ -15,7 +15,7 @@ body {
   align-items: center;
   z-index: 1;
   padding: 0.5rem 0;
-  background-color: #6b4a40; }
+  background-color: #0899ba; }
   .navbar .navbar-logo {
     display: flex;
     align-items: center;
@@ -37,9 +37,9 @@ body {
         color: white;
         padding: 0.5rem 1rem; }
         .navbar .navbar-links li a:hover {
-          color: #fff6b8;
-          border-bottom: #fff6b8 2px solid;
-          fill: #fff6b8; }
+          color: #fcfffd;
+          border-bottom: #fcfffd 2px solid;
+          fill: #fcfffd; }
       .navbar .navbar-links li .shopping-cart {
         height: 1.25rem;
         font-weight: 700; }
@@ -52,7 +52,7 @@ body {
   top: 4.5rem;
   left: 0;
   padding-top: 0.5rem;
-  background-color: #fffceb;
+  background-color: #c4fff9;
   overflow-x: hidden; }
   .menu-bar .menu-bar-content-item {
     display: flex;
@@ -65,16 +65,16 @@ body {
       text-decoration: none;
       font-size: 25px;
       text-align: center;
-      color: #b99a8b;
+      color: #16679a;
       display: block;
       padding-left: 2rem; }
     .menu-bar .menu-bar-content-item:hover {
-      background-color: #fff6b8;
+      background-color: #fcfffd;
       border-radius: 1rem; }
       .menu-bar .menu-bar-content-item:hover .menu-bar-content-item-text {
-        color: #6b4a40; }
+        color: #0899ba; }
       .menu-bar .menu-bar-content-item:hover .menu-bar-content-item-icon {
-        fill: #6b4a40; }
+        fill: #0899ba; }
 
 .page-content {
   position: absolute;
@@ -91,7 +91,7 @@ body {
       font-weight: 800;
       font-size: 48px;
       text-align: center;
-      color: #6b4a40;
+      color: #0899ba;
       padding: 0rem 9rem;
       margin: 1rem 0rem; }
     .page-content .page-content-item .form-label {
@@ -150,7 +150,7 @@ body {
         width: 80%;
         max-width: 700px;
         text-align: center;
-        color: #fff6b8;
+        color: #fcfffd;
         padding: 10px 0;
         height: 150px;
         font-size: 32px; }

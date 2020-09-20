@@ -1,0 +1,129 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./src/css/main.css")
+    title Document
+  body
+    nav.navbar
+      .navbar-logo
+        img.navbar-logo-icon(src="./src/img/icon/logo.svg")
+        h1.navbar-logo-text CakeOP
+      ul.navbar-links
+        li
+          a(href="#") Home
+        li
+          a(href="#") About Us
+        li
+          a(href="#") Contact
+        li
+          a(href="#")
+            svg.shopping-cart(width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(fill-rule="evenodd" clip-rule="evenodd" d="M24.4409 14.955C23.9311 15.885 22.9415 16.5 21.8169 16.5H10.646L8.99666 19.5H26.99V22.5H8.99666C6.71751 22.5 5.27804 20.055 6.37263 18.045L8.39688 14.385L2.99889 3H0V0H4.90318L6.31266 3H28.5044C29.644 3 30.3637 4.23 29.8089 5.22L24.4409 14.955ZM25.9554 6H7.73712L11.2908 13.5H21.8169L25.9554 6ZM8.99666 24C7.34727 24 6.01276 25.35 6.01276 27C6.01276 28.65 7.34727 30 8.99666 30C10.646 30 11.9955 28.65 11.9955 27C11.9955 25.35 10.646 24 8.99666 24ZM21.0072 27C21.0072 25.35 22.3417 24 23.9911 24C25.6405 24 26.99 25.35 26.99 27C26.99 28.65 25.6405 30 23.9911 30C22.3417 30 21.0072 28.65 21.0072 27Z" fill="currentColor")
+        li
+          a(href="#") Log In / Sign Up
+    section.banner
+      .banner-content
+        h1.banner-heading
+          | Best Customized Cakes in Bangalore
+        p.banner-text
+          | Have your dream custom cake made just for you 
+          br
+          | 					Make you celebration special with cake
+        a.banner-button(href="#")
+          span.banner-button-text Order Now
+          span.hr-bar
+          svg.banner-button-icon(width="23" height="23" viewbox="0 0 23 23" xmlns="http://www.w3.org/2000/svg")
+            path(fill-rule="evenodd" clip-rule="evenodd" d="M4.66521 2.30292C4.4617 2.30248 4.26552 2.3256 4.0791 2.36955C3.82354 1.80427 3.48598 1.29713 3.10205 0.911827C2.45042 0.257854 1.42269 0 0 0V2.3C0.8691 2.3 1.36923 2.42548 1.48152 2.53817C1.91463 2.97284 2.29179 3.85602 2.29179 4.6L2.3033 4.76263L3.42613 12.6506C1.54736 12.7484 0.0918979 14.2126 0.00140782 16.043L0 17.25C0.110947 19.1405 1.56157 20.5948 3.37264 20.6981L3.63278 20.6985C4.10429 22.0393 5.37803 23 6.87536 23C8.37214 23 9.6455 22.04 10.1174 20.7H12.8004C13.2723 22.04 14.5457 23 16.0425 23C17.9411 23 19.4802 21.4554 19.4802 19.55C19.4802 17.6446 17.9411 16.1 16.0425 16.1C14.5457 16.1 13.2723 17.06 12.8004 18.4H10.1174C9.6455 17.06 8.37214 16.1 6.87536 16.1C5.37857 16.1 4.10521 17.06 3.63329 18.4H3.43768C2.85328 18.3648 2.32907 17.8393 2.28973 17.1811L2.29179 16.1C2.32268 15.5035 2.84332 14.981 3.49446 14.9486L5.75661 14.9492L5.77301 14.95H17.3223L17.4914 14.8961C18.3603 14.6195 19.0558 13.9629 19.3851 13.1129L19.5058 12.8731L19.898 12.0933C20.3038 11.286 20.7096 10.4774 21.105 9.68737C22.0736 7.75223 22.6827 6.52241 22.8176 6.22041C23.5103 4.66952 22.107 3.47583 20.6727 3.45041L4.66521 2.30292ZM16.9242 12.65H5.85881C5.78523 12.6295 5.72916 12.5669 5.71819 12.489L4.59533 4.60084L20.5039 5.74416C20.2255 6.31387 19.7195 7.33143 19.0571 8.655L19.0405 8.68817C18.6623 9.44364 18.2571 10.2512 17.8519 11.0573L17.4601 11.8362L17.3116 12.1312L17.2557 12.2616C17.1959 12.4289 17.077 12.5665 16.9242 12.65ZM16.0425 20.7C16.6754 20.7 17.1884 20.1851 17.1884 19.55C17.1884 18.9149 16.6754 18.4 16.0425 18.4C15.4097 18.4 14.8966 18.9149 14.8966 19.55C14.8966 20.1851 15.4097 20.7 16.0425 20.7ZM8.02125 19.55C8.02125 20.1851 7.50822 20.7 6.87536 20.7C6.2425 20.7 5.72947 20.1851 5.72947 19.55C5.72947 18.9149 6.2425 18.4 6.87536 18.4C7.50822 18.4 8.02125 18.9149 8.02125 19.55Z" fill="currentColor")
+    section.works
+      h2.works-header Our Works
+      .works-content
+        .works-content-item
+          .works-content-icon-container
+            img.works-content-item-icon(src="./src/img/icon/spanner.svg" alt="spanner")
+          span.works-content-item-title Customized
+          p.works-content-item-text
+            | Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Quidem mollitia obcaecati optio laudantium?
+        .works-content-item
+          .works-content-icon-container
+            img.works-content-item-icon(src="./src/img/icon/cake.svg" alt="cake")
+          span.works-content-item-title Wedding Cakes
+          p.works-content-item-text
+            | Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Quidem mollitia obcaecati optio laudantium?
+        .works-content-item
+          .works-content-icon-container
+            img.works-content-item-icon(src="./src/img/icon/truck.svg" alt="spanner")
+          span.works-content-item-title Door Step Delivery
+          p.works-content-item-text
+            | Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Quidem mollitia obcaecati optio laudantium?
+    section.products
+      h2.products-header Our Products
+      .products-content
+        // --------------------------------------------------------------------------------------------------
+        .products-content-item
+          img.products-content-item-like(src="./src/img/icon/heart-solid.svg" alt="icon")
+          img.products-content-item-image(src="./src/img/product-img-1.png" alt="Product")
+          h2.products-content-item-name
+            | Strawberry cup cake
+          h4.products-content-item-text
+            | Special Edition Limited
+          span.products-content-item-price ₹120
+        .products-content-item
+          img.products-content-item-like(src="./src/img/icon/heart.svg" alt="icon")
+          img.products-content-item-image(src="./src/img/product-img-2.png" alt="Product")
+          h2.products-content-item-name
+            | Strawberry cup cake
+          h4.products-content-item-text
+            | Special Edition Limited
+          span.products-content-item-price ₹120
+        .products-content-item
+          img.products-content-item-like(src="./src/img/icon/heart.svg" alt="icon")
+          img.products-content-item-image(src="./src/img/product-img-3.png" alt="Product")
+          h2.products-content-item-name
+            | Strawberry cup cake
+          h4.products-content-item-text
+            | Special Edition Limited
+          span.products-content-item-price ₹120
+      .products-paginate
+        a(href="#") «
+        a(href="#") 1
+        a.active(href="#") 2
+        a(href="#") 3
+        a(href="#") 4
+        a(href="#") 5
+        a(href="#") 6
+        a(href="#") »
+    section.about
+      h2.about-header About Us
+      h2.about-secondary-header
+        | We bake 
+        br
+        | 				       it right
+      .about-content
+        .about-main-content
+          img(src="./src/img/group.png" alt="Team")
+          div
+            h1.primary-color Our Team
+            span.members Mark Smith:CEO
+            span.members Shannon Johnson
+            span.members John Corbit
+        p.about-content-text
+          | Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          | Explicabo voluptatibus earum cupiditate quos eveniet
+          | aspernatur saepe. Nisi accusamus pariatur quasi eos dolorem,
+          | similique esse dignissimos error veniam. Consectetur
+          | cupiditate quos, iusto veritatis distinctio porro ullam
+          | velit voluptates quia dolores quidem laboriosam hic autem
+          | error eum optio, voluptatibus sapiente architecto id.
+        p.about-content-text
+          | Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          | Explicabo voluptatibus earum cupiditate quos eveniet
+          | aspernatur saepe. Nisi accusamus pariatur quasi eos dolorem,
+          | similique esse dignissimos error veniam. Consectetur
+          | cupiditate quos, iusto veritatis distinctio porro ullam
+          | velit voluptates quia dolores quidem laboriosam hic autem
+          | error eum optio, voluptatibus sapiente architecto id.

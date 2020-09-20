@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./src/css/login.css")
+    title LogIn
+  body
+    .login
+      span.close-btn
+        img(src="./src/img/icon/cross.svg" alt="")
+      h3.auth-header Log In
+      .auth-container
+        button.auth-btn
+          img(src="./src/img/login/googleoauth.svg" alt="Google Login")
+        .hr-text OR LOGIN WITH EMAIL
+        form.form
+          .form-input
+            label(for="email") Email Address
+            input(type="email" placeholder="example@email.com")
+          .form-input
+            label(for="passwod") Password
+            input(type="password" placeholder="password")
+          button.form-button(type="submit") Log In

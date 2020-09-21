@@ -4,6 +4,9 @@ $section-bg-light: #c4fff9;
 $form-label: #777;
 $form-placeholder: #888;
 $menu-bar-content: #16679a;
+input {
+  outline: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 * {
   box-sizing: border-box;

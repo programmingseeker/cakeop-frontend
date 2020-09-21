@@ -9,11 +9,13 @@
 body {
   font-family: 'Lato', sans-serif; }
 
+.primary-text {
+  color: #00bcd4; }
+
 .navbar {
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: #0899ba;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -26,7 +28,7 @@ body {
     .navbar .navbar-logo .navbar-logo-icon {
       margin-right: 1rem; }
     .navbar .navbar-logo .navbar-logo-text {
-      color: white; }
+      color: #5f6368; }
   .navbar .navbar-links {
     display: flex;
     margin-right: 2rem; }
@@ -35,17 +37,15 @@ body {
       padding: 1rem; }
       .navbar .navbar-links li a {
         font-size: 1rem;
-        text-decoration: none;
         color: white;
+        text-decoration: none;
         padding: 0.65rem 1rem; }
         .navbar .navbar-links li a:hover {
-          color: #fcfffd;
-          border-bottom: #fcfffd 2px solid;
-          fill: #fcfffd; }
+          border-bottom: #00bcd4 2px solid; }
       .navbar .navbar-links li .shopping-cart {
         height: 1.25rem;
         font-weight: 700;
-        fill: #fcfffd; }
+        fill: #00bcd4; }
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./../img/cover.jpg");
@@ -71,29 +71,27 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      border: #fcfffd 2px solid;
+      border: white 2px solid;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
-      color: #fcfffd;
-      border-radius: 50px; }
+      border-radius: 50px;
+      color: white; }
       .banner .banner-content .banner-button .banner-button-text {
         font-size: 1.2rem;
         padding-right: 2rem; }
       .banner .banner-content .banner-button .hr-bar {
-        border: #fcfffd solid 1px;
+        border: white solid 1px;
         height: 70%;
         position: absolute;
         left: 67%;
         top: 15%; }
-      .banner .banner-content .banner-button .banner-button-icon {
-        fill: #fcfffd; }
       .banner .banner-content .banner-button:hover {
-        background-color: #fcfffd;
-        color: #0899ba; }
+        background-color: white;
+        color: #00bcd4; }
         .banner .banner-content .banner-button:hover .hr-bar {
-          border: #0899ba solid 1px; }
+          border: #00bcd4 solid 1px; }
         .banner .banner-content .banner-button:hover .banner-button-icon {
-          fill: #0899ba; }
+          fill: #00bcd4; }
 
 .works {
   display: flex;
@@ -101,10 +99,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #c4fff9; }
+  background-color: #f9f9f9; }
   .works .works-header {
     font-size: 2.5rem;
-    color: #0899ba;
+    color: #5f6368;
     margin: 1rem; }
   .works .works-content {
     padding: 1rem;
@@ -119,7 +117,7 @@ body {
       padding: 1rem;
       margin: 0 1rem; }
       .works .works-content .works-content-item .works-content-icon-container {
-        background-color: #fcfffd;
+        border: #00bcd4 2px solid;
         padding: 1.25rem;
         border-radius: 100%; }
         .works .works-content .works-content-item .works-content-icon-container .works-content-item-icon {
@@ -127,7 +125,7 @@ body {
       .works .works-content .works-content-item .works-content-item-title {
         font-size: 2.5rem;
         padding: 0.5rem;
-        color: #0899ba; }
+        color: #00bcd4; }
       .works .works-content .works-content-item .works-content-item-text {
         padding: 0.5rem;
         font-size: 1.2rem;
@@ -136,12 +134,13 @@ body {
 .products {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  color: #5f6368; }
   .products .products-header {
     font-size: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    color: #0899ba; }
+    color: #5f6368; }
   .products .products-content {
     width: 100%;
     display: flex;
@@ -166,16 +165,16 @@ body {
         padding: 1rem 2rem;
         height: 16rem; }
       .products .products-content .products-content-item .products-content-item-name {
-        color: #0899ba;
         padding: 0.25rem 1.25rem; }
       .products .products-content .products-content-item .products-content-item-text {
+        color: #5f6368;
         padding: 0.25rem 1.25rem; }
       .products .products-content .products-content-item .products-content-item-price {
         padding: 0.25rem 1.25rem; }
   .products .products-paginate {
     display: inline; }
     .products .products-paginate a {
-      color: #0899ba;
+      color: #00bcd4;
       padding: 0.5rem 1rem;
       text-decoration: none; }
       .products .products-paginate a:hover {
@@ -184,19 +183,20 @@ body {
           border-radius: 5px;
           background-color: #dddddd; }
       .products .products-paginate a.active {
-        background-color: #fcfffd;
+        color: white;
+        background-color: #00bcd4;
         border-radius: 5px; }
 
 .about {
   display: flex;
-  background-color: #c4fff9;
+  background-color: #f9f9f9;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  color: #5f6368; }
   .about .about-header {
     font-size: 2.25rem;
-    color: #0899ba;
     padding: 1rem 0; }
   .about .about-secondary-header {
     font-size: 5rem;
@@ -216,7 +216,7 @@ body {
       margin: 1.5rem 3rem; }
       .about .about-content .about-main-content .primary-color {
         font-size: 2.25rem;
-        color: #0899ba;
+        color: #5f6368;
         font-weight: 600;
         padding-left: 3rem; }
       .about .about-content .about-main-content .members {
@@ -230,9 +230,10 @@ body {
       font-size: 1.35rem; }
 
 .footer {
-  background-color: #0899ba;
   color: #fff; }
   .footer .footer-main {
+    padding: 0 0 4rem 0;
+    background-color: #3c444c;
     display: flex;
     justify-content: space-between; }
     .footer .footer-main .footer-header {
@@ -269,12 +270,8 @@ body {
               padding-right: 0.5rem; }
             .footer .footer-main .footer-links .footer-link ul li a:hover {
               color: #fff; }
-  .footer .hr {
-    width: 100%;
-    border: solid 0.5px white;
-    margin: 5rem 0 1.25rem 0;
-    opacity: 0.6; }
   .footer .footer-secondary {
+    background-color: #5f6368;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3rem; }

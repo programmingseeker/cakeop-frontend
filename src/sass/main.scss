@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
-$primary-color: #fcfffd;
-$primary-dark: #0899ba;
-$section-bg-light: #c4fff9;
-$form-label: #777;
+$primary-color: #00bcd4;
+$section-bg: #f9f9f9;
+$text-color: #5f6368;
+$form-label: #a19e9b;
 $form-placeholder: #888;
 $menu-bar-content: #16679a;
+$footer-primary-bg: #3c444c;
+$footer-secondary-bg: #5f6368;
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -14,12 +17,15 @@ $menu-bar-content: #16679a;
 body {
   font-family: 'Lato', sans-serif;
 }
+// utility classes
+.primary-text {
+  color: $primary-color;
+}
 
 .navbar {
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: $primary-dark;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -34,7 +40,7 @@ body {
       margin-right: 1rem;
     }
     .navbar-logo-text {
-      color: white;
+      color: #5f6368;
     }
   }
   .navbar-links {
@@ -45,13 +51,11 @@ body {
       padding: 1rem;
       a {
         font-size: 1rem;
-        text-decoration: none;
         color: white;
+        text-decoration: none;
         padding: 0.65rem 1rem;
         &:hover {
-          color: $primary-color;
           border-bottom: $primary-color 2px solid;
-          fill: $primary-color;
         }
       }
       .shopping-cart {
@@ -90,33 +94,30 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      border: $primary-color 2px solid;
+      border: white 2px solid;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
-      color: $primary-color;
       border-radius: 50px;
+      color: white;
       .banner-button-text {
         font-size: 1.2rem;
         padding-right: 2rem;
       }
       .hr-bar {
-        border: $primary-color solid 1px;
+        border: white solid 1px;
         height: 70%;
         position: absolute;
         left: 67%;
         top: 15%;
       }
-      .banner-button-icon {
-        fill: $primary-color;
-      }
       &:hover {
-        background-color: $primary-color;
-        color: $primary-dark;
+        background-color: white;
+        color: $primary-color;
         .hr-bar {
-          border: $primary-dark solid 1px;
+          border: $primary-color solid 1px;
         }
         .banner-button-icon {
-          fill: $primary-dark;
+          fill: $primary-color;
         }
       }
     }
@@ -128,10 +129,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: $section-bg-light;
+  background-color: $section-bg;
   .works-header {
     font-size: 2.5rem;
-    color: $primary-dark;
+    color: $text-color;
     margin: 1rem;
   }
   .works-content {
@@ -147,7 +148,8 @@ body {
       padding: 1rem;
       margin: 0 1rem;
       .works-content-icon-container {
-        background-color: $primary-color;
+        border: $primary-color 2px solid;
+        // background-color: $primary-color;
         padding: 1.25rem;
         border-radius: 100%;
         .works-content-item-icon {
@@ -157,7 +159,7 @@ body {
       .works-content-item-title {
         font-size: 2.5rem;
         padding: 0.5rem;
-        color: $primary-dark;
+        color: $primary-color;
       }
       .works-content-item-text {
         padding: 0.5rem;
@@ -172,11 +174,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $text-color;
   .products-header {
     font-size: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    color: $primary-dark;
+    color: $text-color;
   }
   .products-content {
     width: 100%;
@@ -184,9 +187,6 @@ body {
     justify-content: space-evenly;
     padding: 1rem 2rem;
     margin: 2rem 0;
-    // this is for testing
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
     .products-content-item {
       box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
       border-radius: 2.25rem;
@@ -208,10 +208,10 @@ body {
         height: 16rem;
       }
       .products-content-item-name {
-        color: $primary-dark;
         padding: 0.25rem 1.25rem;
       }
       .products-content-item-text {
+        color: $text-color;
         padding: 0.25rem 1.25rem;
       }
       .products-content-item-price {
@@ -222,7 +222,7 @@ body {
   .products-paginate {
     display: inline;
     a {
-      color: $primary-dark;
+      color: $primary-color;
       padding: 0.5rem 1rem;
       text-decoration: none;
       &:hover {
@@ -233,22 +233,24 @@ body {
         }
       }
       &.active {
+        color: white;
         background-color: $primary-color;
         border-radius: 5px;
       }
     }
   }
 }
+
 .about {
   display: flex;
-  background-color: $section-bg-light;
+  background-color: $section-bg;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
   padding: 2rem 0;
+  color: $text-color;
   .about-header {
     font-size: 2.25rem;
-    color: $primary-dark;
     padding: 1rem 0;
   }
   .about-secondary-header {
@@ -272,7 +274,7 @@ body {
       margin: 1.5rem 3rem;
       .primary-color {
         font-size: 2.25rem;
-        color: $primary-dark;
+        color: $text-color;
         font-weight: 600;
         padding-left: 3rem;
       }
@@ -290,10 +292,12 @@ body {
     }
   }
 }
+
 .footer {
-  background-color: $primary-dark;
   color: #fff;
   .footer-main {
+    padding: 0 0 4rem 0;
+    background-color: $footer-primary-bg;
     display: flex;
     justify-content: space-between;
     .footer-header {
@@ -347,13 +351,8 @@ body {
       }
     }
   }
-  .hr {
-    width: 100%;
-    border: solid 0.5px white;
-    margin: 5rem 0 1.25rem 0;
-    opacity: 0.6;
-  }
   .footer-secondary {
+    background-color: $footer-secondary-bg;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3rem;

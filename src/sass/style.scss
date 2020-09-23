@@ -68,7 +68,6 @@ body {
 .toflex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   .menu-bar {
     display: flex;
     flex-direction: column;
@@ -115,10 +114,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 4.45rem 0rem 2rem 0rem;
-    // position: sticky;
-    // top: 4.45rem;
-    // margin-left: 10%;
-
+    position: relative;
+    left: 12%;
     .page-content-item {
       font-family: Lato;
       display: flex;
@@ -185,6 +182,8 @@ body {
           cursor: pointer;
           border-radius: 50%;
           mix-blend-mode: multiply;
+          width: 5rem;
+          height: 5rem;
         }
         a {
           text-decoration: none;

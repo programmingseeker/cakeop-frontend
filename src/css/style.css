@@ -25,7 +25,8 @@ body {
     display: flex;
     align-items: center;
     margin: 0 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .navbar .navbar-logo .navbar-logo-icon {
       margin-right: 1rem; }
     .navbar .navbar-logo .navbar-logo-text {
@@ -123,6 +124,22 @@ body {
         box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
         border-radius: 21px;
         border: 0px; }
+      .toflex .page-content .page-content-item .submit-btn {
+        display: flex;
+        position: relative;
+        top: 2rem;
+        left: 70%;
+        margin-bottom: 2rem;
+        padding: 0.4rem 0.6rem;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 20%;
+        box-shadow: none;
+        border: #00bcd4 1px solid;
+        font-size: 15px; }
+        .toflex .page-content .page-content-item .submit-btn:hover {
+          background-color: #00bcd4;
+          color: #fff; }
       .toflex .page-content .page-content-item .profile {
         display: flex;
         flex-direction: row;
@@ -130,6 +147,7 @@ body {
         /* Modal Content (image) */
         /* Caption of Modal Image */ }
         .toflex .page-content .page-content-item .profile .profile-photo {
+          cursor: pointer;
           border-radius: 50%;
           mix-blend-mode: multiply; }
         .toflex .page-content .page-content-item .profile a {

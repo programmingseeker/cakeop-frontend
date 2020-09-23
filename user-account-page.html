@@ -8,10 +8,10 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar-logo">
+      <a href="/" class="navbar-logo">
         <img src="./src/img/icon/logo.svg" class="navbar-logo-icon" />
         <h1 class="navbar-logo-text">CakeOP</h1>
-      </div>
+      </a>
       <ul class="navbar-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
@@ -126,20 +126,27 @@
       <section class="page-content">
         <div class="page-content-item">
           <h1 class="page-content-main-text">Account Settings</h1>
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-placeholder drop-shadow"
-            name="name"
-            placeholder="User name"
-          />
-          <label for="email" class="form-label">E-mail</label>
-          <input
-            type="text"
-            class="form-placeholder drop-shadow"
-            name="email"
-            placeholder="username@xyzmail.com"
-          />
+          <form action="#">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-placeholder drop-shadow"
+              name="name"
+              placeholder="User name"
+            />
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="text"
+              class="form-placeholder drop-shadow"
+              name="email"
+              placeholder="username@xyzmail.com"
+            />
+            <input
+              type="submit"
+              value="Save Changes"
+              class="submit-btn drop-shadow"
+            />
+          </form>
 
           <div class="profile">
             <img
@@ -158,32 +165,41 @@
               >Choose New photo</a
             >
           </div>
-          <h1 class="page-content-main-text">Password Change</h1>
-          <label for="current-password" class="form-label"
-            >Current password</label
-          >
-          <input
-            type="text"
-            class="form-placeholder drop-shadow"
-            name="current-password"
-            placeholder="..............."
-          />
-          <label for="new-password" class="form-label">New password</label>
-          <input
-            type="text"
-            class="form-placeholder drop-shadow"
-            name="new-password"
-            placeholder="..............."
-          />
-          <label for="confirm-password" class="form-label"
-            >Confirm password</label
-          >
-          <input
-            type="text"
-            class="form-placeholder drop-shadow"
-            name="confirm-password"
-            placeholder="..............."
-          />
+          <div>
+            <h1 class="page-content-main-text">Password Change</h1>
+            <form action="#">
+              <label for="current-password" class="form-label"
+                >Current password</label
+              >
+              <input
+                type="text"
+                class="form-placeholder drop-shadow"
+                name="current-password"
+                placeholder="..............."
+              />
+              <label for="new-password" class="form-label">New password</label>
+              <input
+                type="text"
+                class="form-placeholder drop-shadow"
+                name="new-password"
+                placeholder="..............."
+              />
+              <label for="confirm-password" class="form-label"
+                >Confirm password</label
+              >
+              <input
+                type="text"
+                class="form-placeholder drop-shadow"
+                name="confirm-password"
+                placeholder="..............."
+              />
+              <input
+                type="submit"
+                value="Update password"
+                class="submit-btn drop-shadow"
+              />
+            </form>
+          </div>
         </div>
       </section>
     </section>

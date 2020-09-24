@@ -20,7 +20,7 @@ var modal = document.getElementById('myModal');
 
 // To check if the src file is present
 var img = document.getElementById('myImg');
-var url = img.attributes.src.value;
+var url = img.src;
 var http = new XMLHttpRequest();
 // Get the image and insert it inside the modal, using its "alt" text as a caption
 var modalImg = document.getElementById('imgUser');

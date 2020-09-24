@@ -1,7 +1,6 @@
 $primary-color: #00bcd4;
 $section-bg: #f9f9f9;
 $text-color: #5f6368;
-$form-label: #a19e9b;
 $form-placeholder: #888;
 // $menu-bar-content: #16679a;
 $footer-primary-bg: #3c444c;
@@ -17,8 +16,6 @@ input {
 }
 body {
   font-family: 'Lato', sans-serif;
-  background-color: $section-bg;
-  height: 150vh;
 }
 .navbar {
   display: flex;
@@ -68,6 +65,8 @@ body {
 .toflex {
   display: flex;
   flex-direction: row;
+  background-color: $section-bg;
+  height: 150vh;
   .menu-bar {
     display: flex;
     flex-direction: column;
@@ -136,7 +135,7 @@ body {
         font-size: 147%;
         display: flex;
         align-items: center;
-        color: $form-label;
+        color: $text-color;
         padding: 1rem;
       }
       input {

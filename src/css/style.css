@@ -8,9 +8,7 @@ input {
   padding: 0; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: #f9f9f9;
-  height: 150vh; }
+  font-family: 'Lato', sans-serif; }
 
 .navbar {
   display: flex;
@@ -50,7 +48,9 @@ body {
 
 .toflex {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #f9f9f9;
+  height: 150vh; }
   .toflex .menu-bar {
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ body {
         font-size: 147%;
         display: flex;
         align-items: center;
-        color: #a19e9b;
+        color: #5f6368;
         padding: 1rem; }
       .toflex .page-content .page-content-item input {
         padding: 0.5rem;

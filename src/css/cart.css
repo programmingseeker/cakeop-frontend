@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+input {
+  outline: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+  height: 100vh; }
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 0.5rem 0;
+  background-color: #fff; }
+  .navbar .navbar-logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    text-decoration: none; }
+    .navbar .navbar-logo .navbar-logo-icon {
+      margin-right: 1rem; }
+    .navbar .navbar-logo .navbar-logo-text {
+      color: #5f6368; }
+  .navbar .navbar-links {
+    display: flex;
+    margin-right: 2rem; }
+    .navbar .navbar-links li {
+      display: inline;
+      padding: 1rem; }
+      .navbar .navbar-links li a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #5f6368;
+        padding: 0.5rem 1rem; }
+        .navbar .navbar-links li a:hover {
+          border-bottom: #00bcd4 2px solid; }
+      .navbar .navbar-links li .shopping-cart {
+        height: 1.25rem;
+        font-weight: 700; }
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; }
+  .page-content .cart {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+    right: 6rem;
+    width: 60%; }
+    .page-content .cart .cart-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .page-content .cart .cart-content .cart-content-head {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .page-content .cart .cart-content .cart-content-head h2 {
+          display: flex;
+          font-style: normal;
+          font-weight: normal;
+          color: #00bcd4;
+          margin: 1.5rem 2rem; }
+      .page-content .cart .cart-content .cart-content-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0rem;
+        background-color: #f9f9f9; }
+        .page-content .cart .cart-content .cart-content-item .product-photo {
+          display: flex;
+          position: absolute;
+          left: 1.5rem;
+          height: 4rem;
+          width: 4rem;
+          border-radius: 6px; }
+        .page-content .cart .cart-content .cart-content-item .cart-content-item-description {
+          display: flex;
+          flex-direction: column;
+          margin: none;
+          position: absolute;
+          left: 6.5rem; }
+          .page-content .cart .cart-content .cart-content-item .cart-content-item-description h3 {
+            color: #5f6368;
+            font-style: normal;
+            font-weight: 800;
+            margin-bottom: 6px; }
+          .page-content .cart .cart-content .cart-content-item .cart-content-item-description h4 {
+            color: #888;
+            font-style: normal;
+            font-weight: normal; }
+        .page-content .cart .cart-content .cart-content-item .cart-quantity {
+          display: flex;
+          position: absolute;
+          left: 22%;
+          /* Chrome, Safari, Edge, Opera */
+          /* Firefox */ }
+          .page-content .cart .cart-content .cart-content-item .cart-quantity input::-webkit-outer-spin-button,
+          .page-content .cart .cart-content .cart-content-item .cart-quantity input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; }
+          .page-content .cart .cart-content .cart-content-item .cart-quantity input[type='number'] {
+            -moz-appearance: textfield; }
+          .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input,
+          .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input {
+            position: relative;
+            display: flex;
+            right: 1rem;
+            margin-left: 9rem;
+            align-items: center; }
+            .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input .cart-quantity-input-plus-minus,
+            .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input .cart-quantity-input-plus-minus {
+              margin: 0rem;
+              display: flex;
+              flex-direction: column; }
+              .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input .cart-quantity-input-plus-minus button,
+              .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input .cart-quantity-input-plus-minus button {
+                color: #888;
+                border: 0px solid;
+                cursor: pointer;
+                font-size: 13px; }
+                .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input .cart-quantity-input-plus-minus button:hover, .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input .cart-quantity-input-plus-minus button:focus,
+                .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input .cart-quantity-input-plus-minus button:hover,
+                .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input .cart-quantity-input-plus-minus button:focus {
+                  color: #5f6368; }
+            .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-quantity-input .cart-quantity-input-number,
+            .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-weight-input .cart-quantity-input-number {
+              display: flex;
+              height: 2rem;
+              width: 2rem;
+              text-align: center;
+              background: #ffffff;
+              border: 1px solid #e4e4e4;
+              border-radius: 6px;
+              color: #5f6368; }
+          .page-content .cart .cart-content .cart-content-item .cart-quantity .cart-price {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            left: 13%;
+            font-style: normal;
+            font-size: 15px;
+            line-height: 22px;
+            /* or 147% */
+            letter-spacing: -0.1px; }
+          .page-content .cart .cart-content .cart-content-item .cart-quantity .btn-remove {
+            display: flex;
+            position: relative;
+            left: 22%;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            color: #5f6368;
+            background: #ffff;
+            border: 1px solid #888;
+            box-sizing: border-box;
+            border-radius: 6px; }
+            .page-content .cart .cart-content .cart-content-item .cart-quantity .btn-remove:hover {
+              background-color: #d11a2a;
+              color: #fff;
+              border-color: #fff; }
+  .page-content .coupon-code-payment {
+    display: flex;
+    flex-direction: column;
+    width: 45vh; }
+    .page-content .coupon-code-payment .coupon-code {
+      display: flex;
+      background-color: #f9f9f9;
+      border: 1px solid #e4e4e4;
+      position: relative;
+      align-items: center;
+      justify-content: flex-start;
+      top: 8rem;
+      height: 15vh;
+      width: 80%;
+      border-radius: 6px; }
+      .page-content .coupon-code-payment .coupon-code form {
+        display: flex;
+        flex-direction: column; }
+        .page-content .coupon-code-payment .coupon-code form .form-label {
+          position: relative;
+          bottom: 1.8rem;
+          color: #5f6368;
+          margin: 0rem 1rem; }
+        .page-content .coupon-code-payment .coupon-code form .coupon-code-input {
+          position: absolute;
+          display: flex;
+          left: 1rem;
+          bottom: 1.7rem;
+          display: flex; }
+          .page-content .coupon-code-payment .coupon-code form .coupon-code-input .form-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 13rem;
+            background-color: #fff;
+            border: 1px solid #e4e4e4;
+            border-radius: 6px;
+            padding: 0rem 0.5rem; }
+          .page-content .coupon-code-payment .coupon-code form .coupon-code-input .submit-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            color: #5f6368;
+            border: none;
+            border-left: 2px solid #e4e4e4;
+            height: 30px;
+            width: 2.85rem;
+            top: 2px;
+            left: 10rem; }
+    .page-content .coupon-code-payment .payment {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      border: 1px solid #e4e4e4;
+      top: 16rem;
+      width: 15rem;
+      height: 33vh;
+      background-color: #f9f9f9;
+      padding: 0rem 0.5rem;
+      border-radius: 6px; }
+      .page-content .coupon-code-payment .payment .price,
+      .page-content .coupon-code-payment .payment .tax,
+      .page-content .coupon-code-payment .payment .discount,
+      .page-content .coupon-code-payment .payment .total {
+        margin: 0.1rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        top: 1rem; }
+        .page-content .coupon-code-payment .payment .price .price-text,
+        .page-content .coupon-code-payment .payment .tax .price-text,
+        .page-content .coupon-code-payment .payment .discount .price-text,
+        .page-content .coupon-code-payment .payment .total .price-text {
+          color: #5f6368; }
+        .page-content .coupon-code-payment .payment .price .main-price,
+        .page-content .coupon-code-payment .payment .price .tax-price,
+        .page-content .coupon-code-payment .payment .tax .main-price,
+        .page-content .coupon-code-payment .payment .tax .tax-price,
+        .page-content .coupon-code-payment .payment .discount .main-price,
+        .page-content .coupon-code-payment .payment .discount .tax-price,
+        .page-content .coupon-code-payment .payment .total .main-price,
+        .page-content .coupon-code-payment .payment .total .tax-price {
+          color: #5f6368; }
+        .page-content .coupon-code-payment .payment .price .discount-price,
+        .page-content .coupon-code-payment .payment .tax .discount-price,
+        .page-content .coupon-code-payment .payment .discount .discount-price,
+        .page-content .coupon-code-payment .payment .total .discount-price {
+          color: #e2264d; }
+        .page-content .coupon-code-payment .payment .price .total-price,
+        .page-content .coupon-code-payment .payment .tax .total-price,
+        .page-content .coupon-code-payment .payment .discount .total-price,
+        .page-content .coupon-code-payment .payment .total .total-price {
+          font-size: 20px; }
+      .page-content .coupon-code-payment .payment .submit-btn {
+        position: relative;
+        top: 1.5rem;
+        border: 1px solid #e4e4e4;
+        box-sizing: border-box;
+        border-radius: 6px;
+        height: 38px;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        background: linear-gradient(229.75deg, #5b86e6 3.22%, #00bcd4 61.89%, #2fbea6 99.49%); }
+        .page-content .coupon-code-payment .payment .submit-btn:hover, .page-content .coupon-code-payment .payment .submit-btn:focus {
+          background: #00bcd4; }
+      .page-content .coupon-code-payment .payment .payment-icons {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 2rem; }
+        .page-content .coupon-code-payment .payment .payment-icons span {
+          margin: 1rem; }

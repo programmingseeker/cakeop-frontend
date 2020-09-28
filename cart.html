@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="navbar-logo">
+        <img src="./src/img/icon/logo.svg" class="navbar-logo-icon" />
+        <h1 class="navbar-logo-text">CakeOP</h1>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#">
+            <svg
+              class="shopping-cart"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.4409 14.955C23.9311 15.885 22.9415 16.5 21.8169 16.5H10.646L8.99666 19.5H26.99V22.5H8.99666C6.71751 22.5 5.27804 20.055 6.37263 18.045L8.39688 14.385L2.99889 3H0V0H4.90318L6.31266 3H28.5044C29.644 3 30.3637 4.23 29.8089 5.22L24.4409 14.955ZM25.9554 6H7.73712L11.2908 13.5H21.8169L25.9554 6ZM8.99666 24C7.34727 24 6.01276 25.35 6.01276 27C6.01276 28.65 7.34727 30 8.99666 30C10.646 30 11.9955 28.65 11.9955 27C11.9955 25.35 10.646 24 8.99666 24ZM21.0072 27C21.0072 25.35 22.3417 24 23.9911 24C25.6405 24 26.99 25.35 26.99 27C26.99 28.65 25.6405 30 23.9911 30C22.3417 30 21.0072 28.65 21.0072 27Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Log In / Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="page-content">
+      <div class="cart">
+        <div class="cart-content">
+          <div class="cart-content-head">
+            <h2>PRODUCT</h2>
+            <h2>QUANTITY</h2>
+            <h2>WEIGHT</h2>
+            <h2>PRICE</h2>
+          </div>
+          <div class="cart-content-item">
+            <img
+              src="./src/img/product-img-1.png"
+              alt="product img"
+              class="product-photo"
+            />
+            <div class="cart-content-item-description">
+              <h3>Cup Cake</h3>
+              <h4>Flavour : Vanilla</h4>
+              <h4>Weight : 2Kg</h4>
+            </div>
+            <div class="cart-quantity">
+              <div class="cart-quantity-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  value="1"
+                  min="1"
+                  step="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <div class="cart-weight-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  min="1"
+                  max="5"
+                  step="1"
+                  value="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <span class="cart-price cart-column">₹490.99</span>
+              <button class="btn btn-remove" type="button">Remove</button>
+            </div>
+          </div>
+          <div class="cart-content-item">
+            <img
+              src="./src/img/product-img-2.png"
+              alt="product img"
+              class="product-photo"
+            />
+            <div class="cart-content-item-description">
+              <h3>Cup Cake</h3>
+              <h4>Flavour : Vanilla</h4>
+              <h4>Weight : 2Kg</h4>
+            </div>
+            <div class="cart-quantity">
+              <div class="cart-quantity-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <div class="cart-weight-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  min="1"
+                  max="5"
+                  step="1"
+                  value="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <span class="cart-price">₹290.99</span>
+              <button class="btn btn-remove" type="button">Remove</button>
+            </div>
+          </div>
+          <div class="cart-content-item">
+            <img
+              src="./src/img/product-img-3.png"
+              alt="product img"
+              class="product-photo"
+            />
+            <div class="cart-content-item-description">
+              <h3>Cup Cake</h3>
+              <h4>Flavour : Vanilla</h4>
+              <h4>Weight : 2Kg</h4>
+            </div>
+            <div class="cart-quantity">
+              <div class="cart-quantity-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <div class="cart-weight-input">
+                <input
+                  class="cart-quantity-input-number"
+                  type="number"
+                  min="1"
+                  max="5"
+                  step="1"
+                  value="1"
+                />
+                <div class="cart-quantity-input-plus-minus">
+                  <button type="button" id="plus">&#9650;</button>
+                  <button type="button" id="minus">&#9660;</button>
+                </div>
+              </div>
+              <span class="cart-price">₹190.99</span>
+              <!-- <div class="heart-icon">
+                <input id="toggle-heart" class="toggle-heart" type="checkbox" />
+                <label for="toggle-heart">❤</label>
+              </div> -->
+              <button class="btn-remove" type="button">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coupon-code-payment">
+        <div class="coupon-code">
+          <form action="#">
+            <label for="name" class="form-label">Have coupon?</label>
+            <div class="coupon-code-input">
+              <input
+                type="text"
+                class="form-placeholder"
+                name="name"
+                placeholder="Coupon code"
+              />
+              <button type="submit" class="submit-btn">Apply</button>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <li class="price">
+            <h3 class="price-text">Price:</h3>
+            <span class="main-price price-number">₹4560.00</span>
+          </li>
+          <li class="tax">
+            <h3 class="price-text">Tax:</h3>
+            <span class="tax-price price-number">₹45.00</span>
+          </li>
+          <li class="discount">
+            <h3 class="price-text">Discount:</h3>
+            <span class="discount-price price-number">-₹456.00</span>
+          </li>
+          <li class="total">
+            <h3 class="price-text">Total:</h3>
+            <span class="total-price price-number">₹4149.00</span>
+          </li>
+          <button type="submit" class="submit-btn">Make purchase</button>
+          <li class="payment-icons">
+            <span
+              ><img src="./src/img/icon/Mastercard-Logo.svg" alt="Master-card"
+            /></span>
+            <span
+              ><img src="./src/img/icon/Paypal-Logo.svg" alt="Paypal"
+            /></span>
+            <span><img src="./src/img/icon/VISA-Logo.svg" alt="Visa" /></span>
+          </li>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/js/index.js"></script>
+</html>
